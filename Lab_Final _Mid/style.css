@@ -1,0 +1,152 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+  background: linear-gradient(135deg, #0f4c81, #1a1a2e);
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 30px 15px;
+}
+
+.container {
+  background: #ffffff;
+  width: 100%;
+  max-width: 560px;
+  border-radius: 12px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.25);
+  overflow: hidden;
+}
+
+.form-header {
+  background: #0f4c81;
+  color: #fff;
+  padding: 22px 30px;
+  text-align: center;
+}
+
+.form-header h1 {
+  font-size: 18px;
+  font-weight: 500;
+  opacity: 0.9;
+}
+
+.form-header h2 {
+  font-size: 22px;
+  margin-top: 6px;
+}
+
+form {
+  padding: 30px;
+}
+
+.form-group {
+  margin-bottom: 18px;
+  display: flex;
+  flex-direction: column;
+}
+
+label {
+  font-size: 14px;
+  font-weight: 600;
+  color: #222;
+  margin-bottom: 6px;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"],
+select,
+textarea {
+  padding: 10px 12px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 14px;
+  outline: none;
+  transition: border-color 0.2s;
+}
+
+input:focus,
+select:focus,
+textarea:focus {
+  border-color: #0f4c81;
+}
+
+input.invalid,
+select.invalid,
+textarea.invalid {
+  border-color: #d32f2f;
+  background-color: #fff5f5;
+}
+
+input.valid,
+select.valid,
+textarea.valid {
+  border-color: #2e7d32;
+}
+
+.radio-group,
+.checkbox-group {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px 20px;
+  padding: 6px 0;
+}
+
+.inline-label {
+  font-weight: 400;
+  font-size: 14px;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  margin: 0;
+}
+
+.error-msg {
+  color: #d32f2f;
+  font-size: 12.5px;
+  margin-top: 5px;
+  min-height: 14px;
+}
+
+.attempt-msg {
+  color: #e65100;
+  font-size: 12.5px;
+  margin-top: 4px;
+}
+
+button[type="submit"] {
+  width: 100%;
+  padding: 12px;
+  background: #0f4c81;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  font-size: 15px;
+  font-weight: 600;
+  cursor: pointer;
+  margin-top: 10px;
+  transition: background 0.2s;
+}
+
+button[type="submit"]:hover {
+  background: #0c3c66;
+}
+
+button[type="submit"]:disabled {
+  background: #999;
+  cursor: not-allowed;
+}
+
+.success-msg {
+  color: #2e7d32;
+  font-weight: 600;
+  text-align: center;
+  margin-top: 15px;
+  min-height: 20px;
+}
